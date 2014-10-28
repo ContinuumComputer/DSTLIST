@@ -31,13 +31,13 @@ all: DSTLIST.txe
 DSTLIST.txe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C Linker (TNS/E)'
-	c89 -Wsystype=guardian -Wcall_shared -Wsaveabend -Weld="-unres_symbols Ignore" -o "DSTLIST.txe" $(OBJS) $(USER_OBJS) $(LIBS)
+	c99 -Wsystype=guardian -Wcall_shared -Wsaveabend -Weld="-unres_symbols Ignore" -o "DSTLIST.txe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 deploy: DSTLIST.txe
 	@echo 'Invoking: Deploy Tool'
-	java -jar "C:/eclipse/plugins/com.hp.nsdee_4.0.0/Tools/Deploy.jar" -dir=\$$WORK1.EXTERNO -r=DSTLIST -q=guardian -code=800 -mode=bin -p=23 -t=ftp -h=ibtdes3 -u=super.externo -f="DSTLIST.txe"
+	java -jar "C:/eclipse/plugins/com.hp.nsdee_4.0.0/Tools/Deploy.jar" -dir=\$$WORK1.EXTERNO -r=DSTLIST -q=guardian -code=800 -mode=bin -p= -t= -h= -u= -f="DSTLIST.txe"
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -17,10 +17,10 @@
 					<folderInfo id="nsdee.managedbuild.ccpp.config.tnse.exe.debug.1739310691." name="/" resourcePath="">
 						<toolChain id="nsdee.managedbuild.toolchain.ccpp.tnse.exe.debug.73926963" name="C-C++ TNS-E Tools" superClass="nsdee.managedbuild.toolchain.ccpp.tnse.exe.debug" unusedChildren="nsdee.managedbuild.ccpp.tool.cpp.compiler.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.c.sqlmp.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.c.sqlmx.pre.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.c.compiler.sqlmp.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.tal.compiler.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cpp.linker.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cobol.sqlmp.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cobol.compiler.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cobol.compiler.sqlmp.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cobol.sqlmx.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.c.sqlmx.tnse.exe.debug;nsdee.managedbuild.ccpp.tool.cobol.sqlmx.pre.tnse.exe.debug">
 							<targetPlatform id="nsdee.managedbuild.ccpp.target.platform.exe.tnse.debug.463046394" isAbstract="false" name="Debug Platform" superClass="nsdee.managedbuild.ccpp.target.platform.exe.tnse.debug"/>
-							<builder buildPath="${workspace_loc:/DSTLIST}/Debug" customBuilderProperties="nsdee.deployDest=$WORK1.EXTERNO|nsdee.deployUser=super.externo|nsdee.compRoot.default=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.postDeployTarget=|nsdee.setCompRootAndPath=true|nsdee.targetSystype=guardian|nsdee.preDeployTarget=|nsdee.deployFileName=DSTLIST|nsdee.compRoot=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.deployTarget=deploy|nsdee.deploySystem=ibtdes3|" id="nsdee.managedbuild.ccpp.target.builder.tnse.exe.debug.1689960012" managedBuildOn="true" name="NonStop Make Builder.Debug" superClass="nsdee.managedbuild.ccpp.target.builder.tnse.exe.debug"/>
+							<builder buildPath="${workspace_loc:/DSTLIST}/Debug" customBuilderProperties="nsdee.deployDest=$WORK1.STAGE1|nsdee.deployUser=|nsdee.compRoot.default=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.postDeployTarget=|nsdee.setCompRootAndPath=true|nsdee.targetSystype=guardian|nsdee.preDeployTarget=|nsdee.deployFileName=DSTLIST|nsdee.compRoot=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.deployTarget=deploy|nsdee.deploySystem=|" id="nsdee.managedbuild.ccpp.target.builder.tnse.exe.debug.1689960012" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="NonStop Make Builder" superClass="nsdee.managedbuild.ccpp.target.builder.tnse.exe.debug"/>
 							<tool id="nsdee.managedbuild.ccpp.tool.c.compiler.tnse.exe.debug.1062733266" name="C Compiler (TNS/E)" superClass="nsdee.managedbuild.ccpp.tool.c.compiler.tnse.exe.debug">
-								<option id="c.compiler.category.optdebug.optc89.1912213676" superClass="c.compiler.category.optdebug.optc89" value="c.compiler.category.optdebug.optc89.none" valueType="enumerated"/>
-								<option id="c.compiler.category.misc.options.tnse.exe.debug.1304875690" superClass="c.compiler.category.misc.options.tnse.exe.debug" valueType="stringList">
+								<option id="c.compiler.category.optdebug.optc89.1912213676" name="Optimization level:" superClass="c.compiler.category.optdebug.optc89" value="c.compiler.category.optdebug.optc89.none" valueType="enumerated"/>
+								<option id="c.compiler.category.misc.options.tnse.exe.debug.1304875690" name="Additional options (one or more per line)" superClass="c.compiler.category.misc.options.tnse.exe.debug" valueType="stringList">
 									<listOptionValue builtIn="false" value="-Wcall_shared"/>
 									<listOptionValue builtIn="false" value="-c"/>
 									<listOptionValue builtIn="false" value="-Wextensions"/>
@@ -29,12 +29,12 @@
 								<inputType id="nsdee.managedbuild.tool.c.compiler.input.1206790394" superClass="nsdee.managedbuild.tool.c.compiler.input"/>
 							</tool>
 							<tool id="nsdee.managedbuild.ccpp.tool.deploy.tnse.exe.debug.1669558878" name="Deploy Tool" superClass="nsdee.managedbuild.ccpp.tool.deploy.tnse.exe.debug">
-								<option id="deploy.category.destination.config.50456439" superClass="deploy.category.destination.config" value="ibtdes3 (super.externo)" valueType="string"/>
-								<option id="deploy.category.destination.directory.839054322" superClass="deploy.category.destination.directory" value="$WORK1.EXTERNO" valueType="string"/>
-								<option id="deploy.category.misc.rfilename.1678328788" superClass="deploy.category.misc.rfilename" value="DSTLIST" valueType="string"/>
+								<option id="deploy.category.destination.config.50456439" name="Connection configuration*:" superClass="deploy.category.destination.config" value="" valueType="string"/>
+								<option id="deploy.category.destination.directory.839054322" name="Directory or subvolume* (-dir=):" superClass="deploy.category.destination.directory" value="$WORK1.STAGE1" valueType="string"/>
+								<option id="deploy.category.misc.rfilename.1678328788" name="Target file name (-r=, leave blank for default):" superClass="deploy.category.misc.rfilename" value="DSTLIST" valueType="string"/>
 							</tool>
-							<tool id="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.debug.229740304" name="C Linker (TNS/E)" superClass="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.debug">
-								<option id="c.link.category.misc.options.tnse.exe.debug.536946669" superClass="c.link.category.misc.options.tnse.exe.debug" valueType="stringList">
+							<tool command="c99" id="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.debug.229740304" name="C Linker (TNS/E)" superClass="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.debug">
+								<option id="c.link.category.misc.options.tnse.exe.debug.536946669" name="Additional options (one or more per line)" superClass="c.link.category.misc.options.tnse.exe.debug" valueType="stringList">
 									<listOptionValue builtIn="false" value="-Wcall_shared"/>
 									<listOptionValue builtIn="false" value="-Wsaveabend"/>
 									<listOptionValue builtIn="false" value="-Weld=&quot;-unres_symbols Ignore&quot;"/>
@@ -66,15 +66,15 @@
 					<folderInfo id="nsdee.managedbuild.ccpp.config.tnse.exe.release.324531098." name="/" resourcePath="">
 						<toolChain id="nsdee.managedbuild.toolchain.ccpp.tnse.exe.release.116502376" name="C-C++ TNS-E Tools" superClass="nsdee.managedbuild.toolchain.ccpp.tnse.exe.release" unusedChildren="nsdee.managedbuild.ccpp.tool.cobol.sqlmx.pre.tnse.exe.release;nsdee.managedbuild.ccpp.tool.c.compiler.sqlmp.tnse.exe.release;nsdee.managedbuild.ccpp.tool.c.sqlmx.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cpp.compiler.tnse.exe.release;nsdee.managedbuild.ccpp.tool.c.sqlmx.pre.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cobol.sqlmp.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cobol.compiler.sqlmp.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cpp.linker.tnse.exe.release;nsdee.managedbuild.ccpp.tool.c.sqlmp.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cobol.sqlmx.tnse.exe.release;nsdee.managedbuild.ccpp.tool.cobol.compiler.tnse.exe.release;nsdee.managedbuild.ccpp.tool.tal.compiler.tnse.exe.release">
 							<targetPlatform id="nsdee.managedbuild.ccpp.target.platform.tnse.exe.release.326261133" isAbstract="false" name="Debug Platform" superClass="nsdee.managedbuild.ccpp.target.platform.tnse.exe.release"/>
-							<builder buildPath="${workspace_loc:/DSTLIST}/Release" customBuilderProperties="nsdee.deployDest=|nsdee.deployUser=|nsdee.compRoot.default=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.postDeployTarget=|nsdee.setCompRootAndPath=true|nsdee.targetSystype=guardian|nsdee.preDeployTarget=|nsdee.deployFileName=|nsdee.compRoot=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.deployTarget=deploy|nsdee.deploySystem=|" id="nsdee.managedbuild.ccpp.target.builder.tnse.exe.release.117598105" managedBuildOn="true" name="NonStop Make Builder.Release" superClass="nsdee.managedbuild.ccpp.target.builder.tnse.exe.release"/>
+							<builder buildPath="${workspace_loc:/DSTLIST}/Release" customBuilderProperties="nsdee.deployUser=|nsdee.deployDest=|nsdee.compRoot.default=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.setCompRootAndPath=true|nsdee.postDeployTarget=|nsdee.targetSystype=guardian|nsdee.preDeployTarget=|nsdee.deployFileName=|nsdee.compRoot=+[TNS/E H06.23] C:\\Program Files (x86)\\HP NonStop\\H06.23|nsdee.deployTarget=deploy|nsdee.deploySystem=|" id="nsdee.managedbuild.ccpp.target.builder.tnse.exe.release.117598105" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="NonStop Make Builder" superClass="nsdee.managedbuild.ccpp.target.builder.tnse.exe.release"/>
 							<tool id="nsdee.managedbuild.ccpp.tool.c.compiler.tnse.exe.release.1008517298" name="C Compiler (TNS/E)" superClass="nsdee.managedbuild.ccpp.tool.c.compiler.tnse.exe.release">
-								<option defaultValue="false" id="c.compiler.category.optdebug.debug.1739204878" superClass="c.compiler.category.optdebug.debug" value="false" valueType="boolean"/>
-								<option id="c.compiler.category.optdebug.optc89.656842094" superClass="c.compiler.category.optdebug.optc89" value="c.compiler.category.optdebug.optc89.two" valueType="enumerated"/>
+								<option defaultValue="false" id="c.compiler.category.optdebug.debug.1739204878" name="Enable symbolic debugging (-g)" superClass="c.compiler.category.optdebug.debug" value="false" valueType="boolean"/>
+								<option id="c.compiler.category.optdebug.optc89.656842094" name="Optimization level:" superClass="c.compiler.category.optdebug.optc89" value="c.compiler.category.optdebug.optc89.two" valueType="enumerated"/>
 								<inputType id="nsdee.managedbuild.tool.c.compiler.input.827872288" superClass="nsdee.managedbuild.tool.c.compiler.input"/>
 							</tool>
 							<tool id="nsdee.managedbuild.ccpp.tool.deploy.tnse.exe.release.1067672799" name="Deploy Tool" superClass="nsdee.managedbuild.ccpp.tool.deploy.tnse.exe.release"/>
 							<tool id="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.release.597091656" name="C Linker (TNS/E)" superClass="nsdee.managedbuild.ccpp.tool.c.linker.tnse.exe.release">
-								<option id="c.link.category.misc.options.tnse.exe.release.617695810" superClass="c.link.category.misc.options.tnse.exe.release" valueType="stringList">
+								<option id="c.link.category.misc.options.tnse.exe.release.617695810" name="Additional options (one or more per line)" superClass="c.link.category.misc.options.tnse.exe.release" valueType="stringList">
 									<listOptionValue builtIn="false" value="-Wcall_shared"/>
 									<listOptionValue builtIn="false" value="-Wnoinspect"/>
 									<listOptionValue builtIn="false" value="-Weld=-s"/>
@@ -100,4 +100,13 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/DSTLIST"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/DSTLIST"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
